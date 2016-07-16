@@ -1,8 +1,11 @@
-# Complete the method called reverse_a_string that accepts a string as a parameter and 
+# Complete the method called reverse_a_string that accepts a string as a parameter and
 # returns the reverse. The one caveat: Don't use the reverse method that already
 # comes with Ruby!
 
 def reverse_a_string(string)
+  letters = string.split(//)
+  reverse = letters.sort! {|a,b| b <=> a}
+  result = reverse.join
 
 end
 
